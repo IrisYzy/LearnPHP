@@ -24,9 +24,17 @@
 <body>
 
 <ul>
+    <h3>Work</h3>
+    <li><a href="work/others.php">others</a></li>
+    <hr>
     <h3>Others</h3>
     <li><a href="variables.php">变量</a></li>
     <li><a href="shorthand.php">分支</a></li>
+    <hr>
+
+    <h3>实战登录注册</h3>
+    <li><a href="myMusic/index.php">index</a></li>
+    <li><a href="myMusic/register.php">register</a></li>
     <hr>
 
     <h3>phpsandbox</h3>
