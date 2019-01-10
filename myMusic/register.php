@@ -6,12 +6,40 @@
  * Time: 下午3:16
  */
 
+
+    function sanitizeFormUsername($inputText) {
+        $inputText = strip_tags($inputText);
+        $username = str_replace(" ","",$inputText);
+        return $inputText;
+    }
+
+    function sanitizeFormString($inputText) {
+        $inputText = strip_tags($inputText);
+        $inputText = str_replace(" ","",$inputText);
+        $inputText = ucfirst(strtolower($inputText));
+        return $inputText;
+    }
+
     if (isset($_POST["loginButton"])){
         echo "Hello!~";
     }
 
     if (isset($_POST['registerButton'])){
-        echo "注册成功！";
+//        $username = sanitizeFormUsername($_POST["username"]);
+//
+//        $username = $_POST['username'];
+//        $username = strip_tags($username);
+//        $username = str_replace(" ","",$username);
+////        echo "$username";
+//        $name = $_POST["name"];
+//        $name = strip_tags($name);
+//        $name = str_replace(" ","*",$name);
+//        $name = ucfirst(strtolower($name));
+//        echo $name;
+
+        $username = sanitizeFormUsername($_POST["username"]);
+        $name = sanitizeFormString($_POST["name"]);
+        $email = sanitizeFormString($_POST["email"]);
     }
 ?>
 
