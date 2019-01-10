@@ -1,29 +1,8 @@
 # LearnPHP
-Good good study~
-<p>发送邮件</p>
 <!DOCTYPE html>
 <css>
-
 </css>
 <html>
-<head>
-    <meta charset="UTF-8">
-    <title>LearnPHP</title>
-</head>
-<style>
-    h1{
-        color: dimgray;
-    }
-    body{
-        background-color: beige;
-    }
-    a {
-        color: cadetblue;
-    }
-    h3{
-        color: darkslateblue;
-    }
-</style>
 <body>
 
 <ul>
